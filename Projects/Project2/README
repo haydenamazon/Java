@@ -1,0 +1,10 @@
+The project is to create an online library that imports books from a ".dat" file. This program needs to be able to look at all the available books and be able to sort, index, and catalogue each book. 
+The program will need to use a binary search in order to find the books
+Exp. int[] numbers {1, 4, 5, 8, 12};
+Note the values are sorted this will need to be done by a sorting method.
+If I wanto to find "4" at spot '1' the binary search will do first + last divided by 2. So this will be 0 + 4 divided by 2. It will then look at index 2 and see the value 5.
+Since 4 < 5 it will take index 0 again and add index spot 5 to it. 0 + 2 divded by 2 = 1. Looking at spot 1 there is value 4. The difference is this will take place alphabetically rather than numerically
+The methods used will be a menu method with switches so the user can input their choice and next will be a sort method, search, print method to do all the required features (more might be installed)
+The play.java file reinforces it being OOP. Where play will be given features like sorting searching, printing, and more.
+The menu will have three options. One to break the code and stop the programs, one to show all the records, and a final one to take user input and find a book accordingly.
+The program will follow an input method which will put all the books from the library.dat file into it, then it will sort them alphabetically, search for them based on user input and then it will finally print them out

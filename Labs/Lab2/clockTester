@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class clockTester {
+
+public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+	int hours;
+	int minutes;
+	int sec;
+System.out.println("How many hours?");
+hours = in.nextInt();
+
+System.out.println("How many minutes?"):
+minutes = in.nextInt();
+
+System.out.println("How many seconds?");
+sec = in.nextInt();
+
+System.out.println(" ");
+
+clock myClock = new clock(hours, minutes, sec);
+myClock.advanceTime();
+System.out.println(myClock);
+}
+}

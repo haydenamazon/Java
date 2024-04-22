@@ -1,0 +1,20 @@
+Start: 8 15 12 34 1
+Then: 1 15 12 34 8
+1 8 12 34 15
+1 8 12 15 34
+Then a double check: 1 8 12 15 34
+
+Binary Search: looking for key 15
+Assumed it will take 2 searches as 2^2 is four and there are a total of 4 indexes
+Sort Values: 1 8 12 15 34
+(First + Last) / 2
+0 + 4 = 4 / 2. Look at index two. Its 12 and not 15.
+2 + 4 = 6 / 2. Look at index three. Key 15 is found here.
+
+
+The capacity of an ArrayList is the total number of cells; full or not. The size of an ArrayList refers to the number of cells that have contents.
+An arrayList does not function the same as an array and can therefore keep doubling in size. It does so until it reaches a 32 bit value of 2,147,483,647.
+
+An Arraylist can increase its size during run time. Also it is easier to remove elements in an arrayList than in an array
+
+An array is better if you are working with a fixed length. If you know the value will be ten and only ten then it is best to use an array to save space. Arrays also run faster due to the less space they consume.

@@ -1,0 +1,83 @@
+import java.util.*;
+
+public class clock {
+
+	private int hours;
+	private int minutes;
+	private int sec;
+
+public clock(int hours, int minutes,int sec)
+{
+	this.hours = hours
+	this.minutes = minutes;
+	this.sec = sec
+}
+public clock()
+{
+	hours = 0;
+	minutes = 0;
+	sec = 0;
+}
+public void reset()
+{
+	hours = 0
+	minutes = 0;
+	sec = 0;
+}
+public void reset(int hours, int minutes, int sec)
+{
+	this.hours = hours;
+	this.minutes = minutes;
+	this.sec = sec;
+}
+public void advanceTime()
+{
+	sec++;
+	if (sec == 60)
+	{
+	sec = 0;
+	minutes++;
+		if (minutes == 60)
+		{
+			minutes = 0;
+			hours++;
+				if (hours == 24)
+				{
+				hours = 0;
+				}
+		}
+	}
+}
+public String toString()
+{
+	string minute;
+	string hr;
+	string second;
+	if (sec < 10)
+	{
+	second = "0" + sec;
+	}
+	else
+	{
+	second = "" + sec;
+	}
+	if (minutes < 10)
+	{
+	minute = "0" + minutes;
+	}
+	else
+	{
+	minute = "" + minutes;
+	}
+	if (hours < 10)
+	{
+	hr = "0" + hours;
+	}
+	else
+	{
+	hr = "" + hours;
+	}
+
+	return hours + ":" + minutes ":" + sec;
+}
+}
